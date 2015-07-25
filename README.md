@@ -1,2 +1,3 @@
-# learning_git
-Learning Git.
+# Git 学習用リポジトリ
+
+ver1.0.0
