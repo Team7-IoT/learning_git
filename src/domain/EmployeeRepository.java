@@ -13,6 +13,12 @@ import entity.Employee;
  */
 public class EmployeeRepository {
 
+    /**
+     * 番号を基に従業員を取得する。
+     *
+     * @param no 従業員番号
+     * @return 該当する従業員。該当する従業員が存在しない場合、{@link NullEmployeeDomain}を返す
+     */
     public EmployeeDomain getByNo(EmployeeNo no) {
         Employee employee = EmployeeContainer.MAP_EMPLOYEE_AS_NO.get(no);
         if (employee == null) {
@@ -22,6 +28,11 @@ public class EmployeeRepository {
         return createDomain(employee);
     }
 
+    /**
+     * 従業員の人数を取得する。
+     *
+     * @return 従業員の人数
+     */
     @SuppressWarnings("unused")
     public long count() {
         long count = 0;
