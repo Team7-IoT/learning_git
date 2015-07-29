@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="learning_git" default="compile">
+
+	<property name="build.src" value="./src" />
+	<property name="build.dest" value="./targets" />
+
+	<property name="main" value="main.Main" />
+	<property name="classpath" value="src" />
+
+	<target name="compile">
+		<mkdir dir="${build.dest}" />
+		<javac encoding="utf-8" srcdir="${build.src}" destdir="${build.dest}" />
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar jarfile="learning_git.jar" basedir="${build.dest}">
+			<manifest>
+				<attribute name="Main-Class" value="${main}" />
+				<attribute name="Class-Path" value="${classpath}" />
+			</manifest>
+		</jar>
+	</target>
+</project>
