@@ -8,7 +8,7 @@ import entity.Employee;
  *
  * @author naotake
  */
-public class EmployeeDomain extends DefaultDomain<Employee> {
+public class EmployeeDomain extends DefaultDomain<Employee> implements Domain<Employee> {
 
     /**
      * 社員番号を取得する。
