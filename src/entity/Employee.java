@@ -11,7 +11,7 @@ import valueobject.Gender;
  *
  * @author naotake
  */
-public abstract class Employee {
+public abstract class Employee implements Entity {
 
     /** 従業員番号 */
     private EmployeeNo no;
