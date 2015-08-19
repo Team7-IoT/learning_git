@@ -11,7 +11,7 @@ import entity.Employee;
  *
  * @author naotake
  */
-public class EmployeeRepository {
+public class EmployeeRepository extends DefaultRepository<Employee, EmployeeDomain> {
 
     /**
      * 番号を基に従業員を取得する。
@@ -41,11 +41,5 @@ public class EmployeeRepository {
             count++;
         }
         return count;
-    }
-
-    private EmployeeDomain createDomain(Employee employee) {
-        EmployeeDomain domain = new EmployeeDomain();
-        domain.setEntity(employee);
-        return domain;
     }
 }
