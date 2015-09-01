@@ -1,8 +1,8 @@
 package main;
 
+import valueobject.EmployeeNo;
 import domain.EmployeeDomain;
 import domain.EmployeeRepository;
-import valueobject.EmployeeNo;
 
 public class Main {
 
