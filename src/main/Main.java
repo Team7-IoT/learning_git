@@ -1,8 +1,8 @@
 package main;
 
-import valueobject.EmployeeNo;
 import domain.EmployeeDomain;
 import domain.EmployeeRepository;
+import valueobject.EmployeeNo;
 
 public class Main {
 
@@ -25,5 +25,11 @@ public class Main {
         nobita = repository.getByNo(EmployeeNo.of(87));
         System.out.println(nobita.getEntity());
         nobita.sayGreeting();
+
+        // しずかちゃん
+        nobita = repository.getByNo(EmployeeNo.of(5));
+        System.out.println(nobita.getEntity());
+        nobita.sayGreeting();
+
     }
 }
