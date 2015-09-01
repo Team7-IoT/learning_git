@@ -25,11 +25,5 @@ public class Main {
         nobita = repository.getByNo(EmployeeNo.of(87));
         System.out.println(nobita.getEntity());
         nobita.sayGreeting();
-
-        // しずかちゃん
-        nobita = repository.getByNo(EmployeeNo.of(5));
-        System.out.println(nobita.getEntity());
-        nobita.sayGreeting();
-
     }
 }
