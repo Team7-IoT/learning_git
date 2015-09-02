@@ -1,8 +1,8 @@
 package main;
 
-import valueobject.EmployeeNo;
 import domain.EmployeeDomain;
 import domain.EmployeeRepository;
+import valueobject.EmployeeNo;
 
 public class Main {
 
@@ -17,13 +17,19 @@ public class Main {
         System.out.println("従業員数は " + employeeCounts);
 
         // ドラえもん
-        EmployeeDomain nobita = repository.getByNo(EmployeeNo.of(93));
+        EmployeeDomain doraemon = repository.getByNo(EmployeeNo.of(93));
+        System.out.println(doraemon.getEntity());
+        doraemon.sayGreeting();
+
+        // のび太
+        EmployeeDomain nobita = repository.getByNo(EmployeeNo.of(87));
         System.out.println(nobita.getEntity());
         nobita.sayGreeting();
 
-        // のび太
-        nobita = repository.getByNo(EmployeeNo.of(87));
-        System.out.println(nobita.getEntity());
-        nobita.sayGreeting();
+        // しずかちゃん
+        EmployeeDomain shizuka  = repository.getByNo(EmployeeNo.of(5));
+        System.out.println(shizuka.getEntity());
+        shizuka.sayGreeting();
+
     }
 }
