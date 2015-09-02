@@ -36,5 +36,9 @@ public class Main {
         System.out.println(suneo.getEntity());
         suneo.sayGreeting();
 
+        // ジャイアン
+        EmployeeDomain jaian  = repository.getByNo(EmployeeNo.of(615));
+        System.out.println(jaian.getEntity());
+        jaian.sayGreeting();
     }
 }
