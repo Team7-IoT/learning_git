@@ -30,15 +30,15 @@ public class Main {
         EmployeeDomain shizuka  = repository.getByNo(EmployeeNo.of(5));
         System.out.println(shizuka.getEntity());
         shizuka.sayGreeting();
-        
-        // スネ夫
-        EmployeeDomain suneo  = repository.getByNo(EmployeeNo.of(2));
-        System.out.println(suneo.getEntity());
-        suneo.sayGreeting();
 
         // ジャイアン
         EmployeeDomain jaian  = repository.getByNo(EmployeeNo.of(615));
         System.out.println(jaian.getEntity());
         jaian.sayGreeting();
+
+        // スネ夫
+        EmployeeDomain suneo  = repository.getByNo(EmployeeNo.of(2));
+        System.out.println(suneo.getEntity());
+        suneo.sayGreeting();
     }
 }
