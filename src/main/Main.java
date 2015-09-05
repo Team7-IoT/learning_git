@@ -22,23 +22,19 @@ public class Main {
         doraemon.sayGreeting();
 
         // のび太
-        EmployeeDomain nobita = repository.getByNo(EmployeeNo.of(87));
-        System.out.println(nobita.getEntity());
-        nobita.sayGreeting();
+        // TODO
+    	// Hint: EmployeeNo.of(87)
 
         // しずかちゃん
-        EmployeeDomain shizuka  = repository.getByNo(EmployeeNo.of(5));
-        System.out.println(shizuka.getEntity());
-        shizuka.sayGreeting();
+    	// TODO
+    	// Hint: EmployeeNo.of(5)
 
         // ジャイアン
-        EmployeeDomain jaian  = repository.getByNo(EmployeeNo.of(615));
-        System.out.println(jaian.getEntity());
-        jaian.sayGreeting();
+    	// TODO
+    	// Hint: EmployeeNo.of(615)
 
         // スネ夫
-        EmployeeDomain suneo  = repository.getByNo(EmployeeNo.of(2));
-        System.out.println(suneo.getEntity());
-        suneo.sayGreeting();
+    	// TODO
+    	// Hint: EmployeeNo.of(2)
     }
 }
