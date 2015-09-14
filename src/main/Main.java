@@ -22,8 +22,9 @@ public class Main {
         doraemon.sayGreeting();
 
         // のび太
-        // TODO
-    	// Hint: EmployeeNo.of(87)
+        EmployeeDomain nobita = repository.getByNo(EmployeeNo.of(87));
+        System.out.println(nobita.getEntity());
+        nobita.sayGreeting();
 
         // しずかちゃん
     	// TODO
