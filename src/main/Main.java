@@ -35,7 +35,8 @@ public class Main {
     	// Hint: EmployeeNo.of(615)
 
         // スネ夫
-    	// TODO
-    	// Hint: EmployeeNo.of(2)
+        EmployeeDomain suneo = repository.getByNo(EmployeeNo.of(2));
+        System.out.println(suneo.getEntity());
+        suneo.sayGreeting();
     }
 }
