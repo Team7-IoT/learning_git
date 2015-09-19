@@ -31,8 +31,9 @@ public class Main {
     	// Hint: EmployeeNo.of(5)
 
         // ジャイアン
-    	// TODO
-    	// Hint: EmployeeNo.of(615)
+        EmployeeDomain jaian = repository.getByNo(EmployeeNo.of(615));
+        System.out.println(jaian.getEntity());
+        jaian.sayGreeting();
 
         // スネ夫
         EmployeeDomain suneo = repository.getByNo(EmployeeNo.of(2));
