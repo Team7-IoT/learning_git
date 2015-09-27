@@ -27,8 +27,9 @@ public class Main {
         nobita.sayGreeting();
 
         // しずかちゃん
-    	// TODO
-    	// Hint: EmployeeNo.of(5)
+        EmployeeDomain shizuka = repository.getByNo(EmployeeNo.of(5));
+        System.out.println(shizuka.getEntity());
+        shizuka.sayGreeting();
 
         // ジャイアン
     	// TODO
