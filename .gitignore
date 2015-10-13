@@ -11,3 +11,5 @@ work
 *.ear
 /target
 /bin
+.DS_Store
+src/.DS_Store
