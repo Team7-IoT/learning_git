@@ -8,9 +8,7 @@ import entity.Employee;
  *
  * @author naotake
  */
-public class EmployeeDomain {
-
-    private Employee entity;
+public class EmployeeDomain extends DefaultDomain<Employee> implements Domain<Employee> {
 
     /**
      * 社員番号を取得する。
@@ -19,21 +17,13 @@ public class EmployeeDomain {
      * @return 社員番号
      */
     public String getNo() {
-        return entity.getNo().toString();
+        return getEntity().getNo().toString();
     }
 
     /**
      * 挨拶をします。
      */
     public void sayGreeting() {
-        System.out.println(String.format("「%s」", entity.getComment()));
-    }
-
-    public Employee getEntity() {
-        return entity;
-    }
-
-    void setEntity(Employee entity) {
-        this.entity = entity;
+        System.out.println(String.format("「%s」", getEntity().getComment()));
     }
 }
